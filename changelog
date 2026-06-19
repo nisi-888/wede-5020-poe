@@ -1,0 +1,137 @@
+# 1080p Cuts - Barbershop Website
+
+## About This Project
+
+1080p Cuts is a website I built for a fictional barbershop located in Brooklyn, Pretoria. The shop caters mainly to students and young professionals, offering quality haircuts at affordable prices. The business used to rely entirely on word-of-mouth and walk-in customers, but this website represents their first step into the digital world.
+
+The goal was to create a clean, professional online presence that feels elegant yet accessible — just like the shop itself.
+
+## What I Used
+
+- **HTML5** for the structure of all pages
+- **CSS3** with custom variables for styling and responsive design
+- **JavaScript** (vanilla) for all the interactive features
+- **Google Maps** integration to show the shop's location
+- **Leaflet.js** as an alternative map option
+
+## What the Website Does
+
+### Home Page
+The home page welcomes visitors with a hero section that explains what 1080p Cuts is all about. It highlights the four main reasons to choose the shop — affordability, cleanliness, customer service, and location — and includes testimonials from happy clients. There's also a section that explains the shop's move from word-of-mouth to building a digital footprint.
+
+### Services Page
+This page lists all the services offered, complete with pricing and durations. Visitors can search for specific services or filter them by category (haircuts, grooming, or details). There's also a gallery where users can click on any image to view it full-size in a lightbox, and a small section showing the grooming products available in-store.
+
+### About Page
+The about page tells the story of how 1080p Cuts started in 2020 and grew through loyal customers and word-of-mouth. It explains the shop's philosophy and core values, introduces the barber team, and highlights that this is a single, independent location — not a chain.
+
+### Enquiry Page
+This page has a contact form where visitors can send general enquiries, ask about bookings, give feedback, or enquire about group bookings, careers, or sponsorships. The form validates all the inputs before submitting, and there's a character counter for the message field. Once submitted, the form shows a response message based on the type of enquiry.
+
+### Bookings / Contact Page
+The bookings page includes a form for scheduling appointments. It validates the user's name, email, phone number, service selection, date, and time. There's also a map showing the shop's location and an accordion section for opening hours. When the form is submitted, the user gets a confirmation message with the option to send the booking details via email.
+
+## What Makes This Site Special
+
+- **Mobile-Friendly** — The layout adapts to any screen size, with a hamburger menu for smaller devices.
+- **Dynamic Content** — Services, team members, and testimonials are loaded from JavaScript, making the site easier to update.
+- **Search and Filter** — Visitors can search through services or filter them by type.
+- **Interactive Gallery** — Images can be clicked to view them full-size in a lightbox.
+- **Form Validation** — Both forms check the user's input before submitting and show helpful error messages.
+- **Responsive Design** — Everything adjusts smoothly whether you're on a phone, tablet, or desktop computer.
+
+## The Pages
+
+| Page | What It's For |
+|------|---------------|
+| index.html | Homepage with hero, benefits, testimonials, and call-to-action |
+| services.html | Service listings with search, filter, and gallery |
+| about.html | Shop story, philosophy, values, and barber team |
+| enquire.html | Contact form for general and specific enquiries |
+| contact.html | Booking form with map and opening hours |
+
+## How I Built It — Version History
+
+### Part 3 — Final Enhancements (June 2026)
+
+**Feedback Corrections**
+- 15 June 2026 — Fixed all file paths to use relative paths so everything works locally
+- 15 June 2026 — Resolved CSS styling issues that were affecting layout consistency
+- 16 June 2026 — Added missing alt text to all images for accessibility
+- 16 June 2026 — Improved responsive design for better mobile experience
+
+**JavaScript Features Added**
+- 17 June 2026 — Hamburger menu for mobile navigation
+- 17 June 2026 — Dynamic services with real-time search and category filtering
+- 17 June 2026 — Dynamic team member loading on the about page
+- 17 June 2026 — Lightbox gallery for viewing images full-size
+- 18 June 2026 — Form validation for both enquiry and booking forms
+- 18 June 2026 — Character counter on the enquiry message field
+- 18 June 2026 — Accordion component for showing and hiding opening hours
+- 18 June 2026 — Google Maps integration to show the shop's location
+
+**Search Engine Optimisation**
+- 18 June 2026 — Added unique meta descriptions for every page
+- 18 June 2026 — Added relevant meta keywords to each page
+- 18 June 2026 — Structured content with proper heading hierarchy (H1 through H4)
+- 18 June 2026 — Wrote descriptive alt text for all images
+- 19 June 2026 — Created robots.txt file to guide search engine crawlers
+- 19 June 2026 — Created sitemap.xml to help search engines understand the site structure
+- 19 June 2026 — Improved internal linking between all pages
+
+**Form Enhancements**
+- 19 June 2026 — Enquiry form now validates name, email, phone, enquiry type, and message
+- 19 June 2026 — Booking form now validates name, email, phone, service, date, and time
+- 19 June 2026 — Both forms show clear success messages after valid submission
+- 19 June 2026 — Both forms show helpful error messages when something's wrong
+- 19 June 2026 — Booking form compiles an email with all the details for the shop to confirm
+
+**Deployment and Submission**
+- 19 June 2026 — Deployed the website to Netlify
+- 19 June 2026 — Pushed all code to GitHub repository
+- 19 June 2026 — Updated this README with all project information
+
+### Part 2 — Initial Development (May 2026)
+- 25 May 2026 — Created HTML structure for all five pages
+- 26 May 2026 — Built the external CSS stylesheet with a consistent colour scheme
+- 27 May 2026 — Added responsive design with breakpoints for desktop, tablet, and mobile
+- 28 May 2026 — Set up the navigation system between all pages
+
+### Part 1 — Planning (May 2026)
+- 20 May 2026 — Researched barbershop websites for design inspiration
+- 21 May 2026 — Planned out the content and structure for each page
+- 22 May 2026 — Created wireframes for the layout and user flow
+
+## References and Resources
+
+I used the following resources while building this project:
+
+**Code Documentation**
+- W3Schools — for HTML and CSS reference and examples
+- MDN Web Docs — for JavaScript documentation and best practices
+- Leaflet.js — for interactive map functionality
+- Google Maps Platform — for location integration
+
+**Design Inspiration**
+- Legends Barber — for professional barbershop website design inspiration
+- Various student-friendly barbershop websites — for layout and content ideas
+
+**Images**
+- All images used in this project are original or sourced from free-to-use platforms
+- Placeholder images were used during development and replaced with final assets
+
+## Where to Find It
+
+- **Live Website:** [https://1080pcuts.netlify.app](https://1080pcuts.netlify.app) *(replace with your actual deployed URL)*
+- **GitHub Repository:** [https://github.com/yourusername/1080p-cuts](https://github.com/yourusername/1080p-cuts) *(replace with your actual repo URL)*
+
+## Contact
+
+If you have any questions about this project, feel free to reach out.
+
+---
+
+**Student:** ST10520062  
+**Module:** WEDE5020  
+**Project:** POE Part 3  
+**Year:** 2026
