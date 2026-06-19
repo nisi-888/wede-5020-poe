@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1080p Cuts | Book Your Appointment</title>
+    <meta name="description" content="Book your appointment at 1080p Cuts in Brooklyn, Pretoria. Student discounts available for quality haircuts and grooming services.">
+    <meta name="keywords" content="book haircut pretoria, student barbershop, brooklyn barber, appointment, 1080p cuts booking">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html">1080p Cuts</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="enquire.html">Enquiry</a></li>
+                    <li><a href="contact.html" class="active">Bookings / Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger hide-desktop" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <img src="bookNow.jpg" alt="Book your appointment at 1080p Cuts" class="banner-img">
+                <h1>Book Your 1080p Experience</h1>
+                <p>Walk-ins are always welcome, but booking guarantees your spot — especially on busy days.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="two-column-layout">
+                    <div>
+                        <img src="interior.jpg" alt="Clean interior at 1080p Cuts Brooklyn" class="section-img">
+                        <div id="map-container" style="margin-top: var(--space-lg);">
+                            <h3>Find Us in Brooklyn</h3>
+                            <div id="map" style="width:100%; height:300px; background:#e5e5e5; border-radius:var(--radius-md);">
+                                <div style="display:flex;justify-content:center;align-items:center;height:100%;background:#f5f0e8;border-radius:8px;padding:20px;">
+                                    <p style="text-align:center;color:#6b6b76;">
+                                        <strong>📍 452 Nicolson Street, Brooklyn, Pretoria</strong><br>
+                                        <a href="https://maps.google.com/maps?q=452+Nicolson+Street+Pretoria" target="_blank" style="color:#e2b87a;">Open in Google Maps →</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-sm" style="margin-top: var(--space-xs);"><strong>📍 452 Nicolson Street, Brooklyn, Pretoria, 0181</strong></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Book Your Appointment</h2>
+                        <form id="bookingForm" novalidate>
+                            <div class="form-group">
+                                <label for="booking-name">Full name *</label>
+                                <input type="text" id="booking-name" name="name" placeholder="e.g., Thabo Mokoena" required>
+                                <small class="error-message" id="bookingNameError"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-email">Email *</label>
+                                <input type="email" id="booking-email" name="email" placeholder="thabo@example.com" required>
+                                <small class="error-message" id="bookingEmailError"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-phone">Phone *</label>
+                                <input type="tel" id="booking-phone" name="phone" placeholder="+27 12 345 6789" required>
+                                <small class="error-message" id="bookingPhoneError"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Select Service *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">-- Choose service --</option>
+                                    <option value="standard">Standard Haircut (R140 / Student R120)</option>
+                                    <option value="fade">Skin Fade (R160 / Student R140)</option>
+                                    <option value="textured">Textured Crop (R160 / Student R140)</option>
+                                    <option value="beard">Beard Shape & Trim (R70)</option>
+                                    <option value="linedesign">Line Design (R40)</option>
+                                    <option value="eyebrow">Eyebrow Tidy (R30)</option>
+                                    <option value="hottowel">Hot Towel Refresh (R50 add-on)</option>
+                                    <option value="combo">Student Special Combo (R220)</option>
+                                </select>
+                                <small class="error-message" id="serviceError"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-date">Preferred Date *</label>
+                                <input type="date" id="booking-date" name="date" required>
+                                <small class="error-message" id="dateError"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-time">Preferred Time *</label>
+                                <input type="time" id="booking-time" name="time" required>
+                                <small class="error-message" id="timeError"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="student-id">Do you have a valid student ID?</label>
+                                <select id="student-id" name="student_discount">
+                                    <option value="no">No</option>
+                                    <option value="yes">Yes (I qualify for student discount Tue-Thu)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-notes">Special notes (style reference, allergies, etc.)</label>
+                                <textarea id="booking-notes" name="notes" rows="3" placeholder="Share a photo reference or tell us exactly what you want..."></textarea>
+                            </div>
+                            <button type="submit" class="btn">Request Booking</button>
+                            <div id="bookingResponse" class="form-response"></div>
+                        </form>
+                        <p class="text-sm" style="margin-top: var(--space-sm);">We'll confirm your slot by SMS or email within 2 hours. Walk-ins also welcome — just pop by!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: #f5f0e8;">
+            <div class="container">
+                <div class="grid-2col">
+                    <div class="card">
+                        <h3>📍 One Location. Easy to Find.</h3>
+                        <p><strong>1080p Cuts Barbershop</strong><br>452 Nicolson Street<br>Brooklyn, Pretoria<br>0181, South Africa</p>
+                        <p><strong>Landmark:</strong> 2 blocks from Brooklyn Mall, opposite the Shell garage.</p>
+                        <p><strong>Call/WhatsApp:</strong> +27 (0) 12 345 6789</p>
+                        <p><strong>Email:</strong> bookings@1080pcuts.co.za</p>
+                    </div>
+                    <div class="card">
+                        <h3>📞 Contact & Hours</h3>
+                        <div class="accordion" id="hoursAccordion">
+                            <button class="accordion-btn" id="hoursToggle">View Opening Hours ▼</button>
+                            <div class="accordion-content" id="hoursContent">
+                                <ul>
+                                    <li><strong>Monday – Wednesday:</strong> 9:00 AM – 6:00 PM</li>
+                                    <li><strong>Thursday – Friday:</strong> 9:00 AM – 7:00 PM</li>
+                                    <li><strong>Saturday:</strong> 8:00 AM – 5:00 PM</li>
+                                    <li><strong>Sunday:</strong> Closed (rest & clean)</li>
+                                </ul>
+                                <p><em>* Student discount applies Tue-Thu with valid student ID.</em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container text-center">
+                <h2>Connect With Us</h2>
+                <p style="max-width: 600px; margin: 0 auto var(--space-lg) auto;">Follow us on social media to see our latest work, promotions, and student specials.</p>
+                <div style="display: flex; gap: var(--space-lg); justify-content: center; flex-wrap: wrap;">
+                    <a href="#" class="btn btn-secondary">Instagram</a>
+                    <a href="#" class="btn btn-secondary">TikTok</a>
+                    <a href="#" class="btn btn-secondary">Facebook</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <img src="logo.png" alt="1080p Cuts Logo" class="responsive-img" style="max-width:120px;">
+                <h3>1080p Cuts</h3>
+                <p>Brooklyn, Pretoria's premier student-friendly barbershop. Sharp cuts, smart prices.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="enquire.html">Enquiry</a></li>
+                    <li><a href="contact.html">Bookings / Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Visit Us</h4>
+                <p>452 Nicolson Street<br>Brooklyn, Pretoria<br>0181, South Africa</p>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="TikTok">TikTok</a></li>
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-center" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: var(--space-lg);">
+            <p>© 2026 1080p Cuts — Elegant, accessible, precise. Established 2020.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

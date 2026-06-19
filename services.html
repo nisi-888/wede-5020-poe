@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1080p Cuts | Services & Pricing</title>
+    <meta name="description" content="View 1080p Cuts services and pricing. Affordable haircuts, skin fades, beard trims, and grooming for students and young professionals in Brooklyn, Pretoria.">
+    <meta name="keywords" content="services pretoria barbershop, haircut prices, student barber, skin fade, beard trim, 1080p cuts">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html">1080p Cuts</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="enquire.html">Enquiry</a></li>
+                    <li><a href="contact.html">Bookings / Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger hide-desktop" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <img src="services.jpg" alt="1080p Cuts grooming services - affordable and high quality" class="banner-img">
+                <h1>Our Services & Prices</h1>
+                <p>Affordable grooming designed for students and young professionals. No hidden fees, just great cuts.</p>
+                <p><strong>Student discount:</strong> Show your valid student ID and get R20 off any haircut (Tuesday-Thursday).</p>
+            </div>
+        </section>
+
+        <section style="background-color: #f5f0e8;">
+            <div class="container">
+                <div class="search-filter" style="display: flex; gap: var(--space-md); flex-wrap: wrap; align-items: center;">
+                    <div style="flex: 1; min-width: 200px;">
+                        <input type="text" id="serviceSearch" placeholder="🔍 Search services..." class="search-input" style="width: 100%; padding: var(--space-sm) var(--space-md); border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+                    </div>
+                    <div style="min-width: 150px;">
+                        <select id="serviceFilter" class="filter-select" style="width: 100%; padding: var(--space-sm) var(--space-md); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: white;">
+                            <option value="all">All Services</option>
+                            <option value="haircut">Haircuts</option>
+                            <option value="grooming">Grooming</option>
+                            <option value="details">Details</option>
+                        </select>
+                    </div>
+                    <span id="resultCount" style="color: var(--color-text-light); font-size: var(--font-sm);">Showing all services</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="grid-3col" id="services-container">
+                    <!-- Services loaded dynamically via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: #f5f0e8;">
+            <div class="container">
+                <h2 class="text-center">Our Work Gallery</h2>
+                <p class="text-center" style="max-width: 600px; margin: 0 auto var(--space-lg) auto;">Click on any image to view it full size. See the quality and precision of our cuts.</p>
+                <div class="grid-3col" id="gallery">
+                    <div class="gallery-item card text-center">
+                        <img src="fade.jpg" alt="Skin fade haircut result at 1080p Cuts" class="service-img" data-full="fade.jpg" style="cursor: pointer;">
+                        <p><strong>Clean Skin Fade</strong></p>
+                    </div>
+                    <div class="gallery-item card text-center">
+                        <img src="bold.webp" alt="Bold textured crop hairstyle" class="service-img" data-full="bold.webp" style="cursor: pointer;">
+                        <p><strong>Textured Crop</strong></p>
+                    </div>
+                    <div class="gallery-item card text-center">
+                        <img src="stylish.jpg" alt="Stylish modern haircut" class="service-img" data-full="stylish.jpg" style="cursor: pointer;">
+                        <p><strong>Modern Style</strong></p>
+                    </div>
+                    <div class="gallery-item card text-center">
+                        <img src="beardTrim.jpg" alt="Beard trim and shape result" class="service-img" data-full="beardTrim.jpg" style="cursor: pointer;">
+                        <p><strong>Beard Shape & Trim</strong></p>
+                    </div>
+                    <div class="gallery-item card text-center">
+                        <img src="fade2.webp" alt="Line design in hair" class="service-img" data-full="fade2.webp" style="cursor: pointer;">
+                        <p><strong>Line Design</strong></p>
+                    </div>
+                    <div class="gallery-item card text-center">
+                        <img src="linedFade.jpg" alt="Student special combo cut" class="service-img" data-full="linedFade.jpg" style="cursor: pointer;">
+                        <p><strong>Student Special Combo</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="two-column-layout">
+                    <div>
+                        <h2>Walk-ins Welcome — But Booking Guarantees Your Spot</h2>
+                        <p>We love our loyal walk-in customers! But to reduce wait times and make your experience smoother, we encourage online booking. Same-day bookings available if the chair is free.</p>
+                        <a href="contact.html" class="btn">Book Your Spot →</a>
+                    </div>
+                    <div>
+                        <h3>Take the 1080p Experience Home</h3>
+                        <p>We stock affordable, quality grooming products at the shop.</p>
+                        <div style="display: flex; gap: var(--space-md); margin-top: var(--space-md); flex-wrap: wrap;">
+                            <img src="pomade.webp" alt="1080p Cuts pomade" class="product-img" style="width: 80px; height: 80px; object-fit: contain; background: white; padding: var(--space-xs); border-radius: var(--radius-md);">
+                            <img src="beardOil.webp" alt="Beard oil" class="product-img" style="width: 80px; height: 80px; object-fit: contain; background: white; padding: var(--space-xs); border-radius: var(--radius-md);">
+                            <img src="spray.jpg" alt="Texturizing spray" class="product-img" style="width: 80px; height: 80px; object-fit: contain; background: white; padding: var(--space-xs); border-radius: var(--radius-md);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: var(--color-primary); color: var(--color-background);">
+            <div class="container text-center">
+                <h2 style="color: var(--color-background);">Ready for Your Fresh Cut?</h2>
+                <p style="color: #d0d0d8; max-width: 600px; margin: 0 auto var(--space-lg) auto;">Book your appointment today and experience the 1080p difference.</p>
+                <div class="btn-group">
+                    <a href="contact.html" class="btn">Book Now</a>
+                    <a href="enquire.html" class="btn btn-secondary" style="color: var(--color-background); border-color: var(--color-background);">Ask a Question</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <img src="logo.png" alt="1080p Cuts Logo" class="responsive-img" style="max-width:120px;">
+                <h3>1080p Cuts</h3>
+                <p>Brooklyn, Pretoria's premier student-friendly barbershop. Sharp cuts, smart prices.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="enquire.html">Enquiry</a></li>
+                    <li><a href="contact.html">Bookings / Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Visit Us</h4>
+                <p>452 Nicolson Street<br>Brooklyn, Pretoria<br>0181, South Africa</p>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="TikTok">TikTok</a></li>
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-center" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: var(--space-lg);">
+            <p>© 2026 1080p Cuts — Elegant, accessible, precise. Established 2020.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

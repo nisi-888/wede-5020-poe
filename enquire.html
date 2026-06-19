@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1080p Cuts | Enquiry & Feedback</title>
+    <meta name="description" content="Contact 1080p Cuts for enquiries about services, student discounts, group bookings, or partnership opportunities in Brooklyn, Pretoria.">
+    <meta name="keywords" content="enquiry pretoria barbershop, student barber questions, 1080p cuts contact, group bookings, barber careers">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html">1080p Cuts</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="enquire.html" class="active">Enquiry</a></li>
+                    <li><a href="contact.html">Bookings / Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger hide-desktop" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <img src="enquire.png" alt="Contact 1080p Cuts team for enquiries" class="banner-img">
+                <h1>We'd Love to Hear From You</h1>
+                <p>Questions about our services? Want to partner with us? Or just want to say hi — drop us a message.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="two-column-layout">
+                    <div>
+                        <img src="talking2.jpg" alt="Barber consulting with a client at 1080p Cuts" class="section-img">
+                        <div class="card" style="margin-top: var(--space-lg);">
+                            <h3>Quick Contact</h3>
+                            <p><strong>📞 Call/WhatsApp:</strong> +27 (0) 12 345 6789</p>
+                            <p><strong>✉️ Email:</strong> hello@1080pcuts.co.za</p>
+                            <p><strong>📍 Address:</strong> 452 Nicolson Street, Brooklyn, Pretoria</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Send an Enquiry</h2>
+                        <form id="enquiryForm" novalidate>
+                            <div class="form-group">
+                                <label for="fullname">Full name *</label>
+                                <input type="text" id="fullname" name="fullname" placeholder="e.g., Thabo Mokoena" required>
+                                <small class="error-message" id="fullnameError"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address *</label>
+                                <input type="email" id="email" name="email" placeholder="thabo@example.com" required>
+                                <small class="error-message" id="emailError"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+27 12 345 6789">
+                                <small class="error-message" id="phoneError"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="enquiry-type">Enquiry type *</label>
+                                <select id="enquiry-type" name="enquiry_type" required>
+                                    <option value="">-- Select an option --</option>
+                                    <option value="general">General question</option>
+                                    <option value="booking">Booking assistance</option>
+                                    <option value="feedback">Feedback or suggestion</option>
+                                    <option value="group">Group booking (student societies / teams)</option>
+                                    <option value="careers">Barber / staff inquiry</option>
+                                    <option value="sponsor">Sponsorship or partnership</option>
+                                </select>
+                                <small class="error-message" id="enquiryTypeError"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your message *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Let us know how we can help..." required minlength="10"></textarea>
+                                <small class="error-message" id="messageError"></small>
+                                <small id="charCount" class="char-count">0 / 500 characters</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="hear">How did you hear about us?</label>
+                                <select id="hear" name="hear_about">
+                                    <option value="">-- Select (optional) --</option>
+                                    <option value="walkedby">Walked by the shop</option>
+                                    <option value="friend">Friend / word of mouth</option>
+                                    <option value="instagram">Instagram</option>
+                                    <option value="tiktok">TikTok</option>
+                                    <option value="google">Google search</option>
+                                    <option value="facebook">Facebook</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn">Send Enquiry</button>
+                            <div id="formResponse" class="form-response"></div>
+                        </form>
+                        <p class="text-sm" style="margin-top: var(--space-sm);">We aim to reply within 12 hours (usually faster). Your privacy is respected.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: #f5f0e8;">
+            <div class="container">
+                <h2 class="text-center">Other Ways to Reach Us</h2>
+                <div class="grid-3col">
+                    <div class="card text-center">
+                        <img src="contact.png" alt="Phone icon" class="image-icon">
+                        <h3>Call / WhatsApp</h3>
+                        <p>+27 (0) 12 345 6789</p>
+                        <p>WhatsApp: +27 61 234 5678</p>
+                        <small>Available during business hours</small>
+                    </div>
+                    <div class="card text-center">
+                        <img src="email.png" alt="Email icon" class="image-icon">
+                        <h3>Email</h3>
+                        <p>hello@1080pcuts.co.za</p>
+                        <p>bookings@1080pcuts.co.za</p>
+                        <small>We respond within 12 hours</small>
+                    </div>
+                    <div class="card text-center">
+                        <img src="locationlcon.png" alt="Location icon" class="image-icon">
+                        <h3>Visit Us</h3>
+                        <p>452 Nicolson Street, Brooklyn<br>Pretoria, 0181</p>
+                        <small>Walk-ins welcome!</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="card">
+                    <h3>📋 Opening Hours</h3>
+                    <div style="display: flex; align-items: center; gap: var(--space-md); flex-wrap: wrap;">
+                        <img src="clocklcon.jpg" alt="Clock icon" style="width: 40px; height: 40px;">
+                        <ul style="margin: 0;">
+                            <li><strong>Monday – Wednesday:</strong> 9:00 AM – 6:00 PM</li>
+                            <li><strong>Thursday – Friday:</strong> 9:00 AM – 7:00 PM</li>
+                            <li><strong>Saturday:</strong> 8:00 AM – 5:00 PM</li>
+                            <li><strong>Sunday:</strong> Closed (rest & clean)</li>
+                        </ul>
+                    </div>
+                    <p><em>* Student discount applies Tue-Thu with valid student ID.</em></p>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: var(--color-primary); color: var(--color-background);">
+            <div class="container text-center">
+                <h2 style="color: var(--color-background);">Stay Connected</h2>
+                <p style="color: #d0d0d8; max-width: 600px; margin: 0 auto var(--space-lg) auto;">Follow us for updates, student specials, and behind-the-scenes content.</p>
+                <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
+                    <a href="#" class="btn btn-secondary" style="color: var(--color-background); border-color: var(--color-background);">Instagram</a>
+                    <a href="#" class="btn btn-secondary" style="color: var(--color-background); border-color: var(--color-background);">TikTok</a>
+                    <a href="#" class="btn btn-secondary" style="color: var(--color-background); border-color: var(--color-background);">Facebook</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <img src="logo.png" alt="1080p Cuts Logo" class="responsive-img" style="max-width:120px;">
+                <h3>1080p Cuts</h3>
+                <p>Brooklyn, Pretoria's premier student-friendly barbershop. Sharp cuts, smart prices.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="enquire.html">Enquiry</a></li>
+                    <li><a href="contact.html">Bookings / Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Visit Us</h4>
+                <p>452 Nicolson Street<br>Brooklyn, Pretoria<br>0181, South Africa</p>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="TikTok">TikTok</a></li>
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-center" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: var(--space-lg);">
+            <p>© 2026 1080p Cuts — Elegant, accessible, precise. Established 2020.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
