@@ -1,21 +1,21 @@
-# Project Title
-Your project's title
+1080p Cuts
+Barber shop website
 
 ## Student Information
-**Student number:** Your student number <br>
-**Student Name:** Your full name
+ST10520062
+Manelisi Mthembu
 
 ## Project Overview
 
-Pull this from your project proposal.
+web page for a local barber shop geared towards students and young professionals in the surrounding areas of Brooklyn, Pretoria.
 
 ## Website Goals and Objectives
 
-Pull this from your project proposal.
+To improve its foot traffic by pivoting from relying on word of mouth to driving sales through it's digital presence.
 
 ## Timeline and Milestones
 
-Pull this from your project proposal.
+project timeline - 6 months
 
 ## Sitemap
 
